@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Gradient Background */
+    .gradient-background {
+      background: rgb(255, 208, 229);
+      background: linear-gradient(180deg, rgba(255, 208, 229, 1) 0%, rgba(255, 232, 242, 1) 36%, rgba(255, 255, 255, 1) 100%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Optional Fade-in Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Button Styling */
+    .button-style {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 12px 24px;
+      color: #bd1e59;
+      background-color: rgba(255, 208, 229);
+      border-width: 1px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      
+    }
+
+    .button-style:hover {
+      background-color: rgba(255, 208, 229);
+      box-shadow: 0px 0px 15px rgba(77, 58, 75, 0.8);
+    }
+
+    .text{
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="gradient-background">
+
+  <h1 class="text-[#bd1e59] text-4xl font-bold fade-in mb-6">Heyyyyyyyyy!!!</h1>
+  <img id="imageDisplay" src="https://i.pinimg.com/originals/7e/d9/96/7ed99619f23b36e3fef2291b44dca181.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;"/>
+  <p class="text">Pratigya!!! Why don't youuuu click on this button???</p>
+  <br>
+  <button class="button-style fade-in" onclick="redirectToMain()">Click Here</button>
+ 
+
+  <script>
+    function redirectToMain() {
+      window.location.href = "index.html"; // Change this to your target page
+    }
+  </script>
+
+</body>
+</html>
